@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <title>home</title>
+</head>
+<body>
+  <header class="bg-slate-800 shadow-md sticky top-0">
+      <div class="flex justify-between md:justify-center container mx-auto px-4 py-2">
+        <!--logo-->
+        <a href="#" class="md:flex md:float-left font-family text-white text-lg md:text-2xl">KWEIPE</a>
+        <!--mobile menu and bag-->
+        <div class="flex items-center gap-2 text-yellow-300 md:hidden">
+          <span class="icon-[tabler--shopping-bag]"></span>
+          <span class="icon-[tabler--category-2]"></span>
+        </div>
+        <!--desktop menu-->
+        <nav class="md:text-yellow-300 md:font-[Century_gothic] md:text-lg md:flex md:mx-auto hidden">
+          <div class="flex space-x-16">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact us</a>
+          </div>
+        </nav>
+    </div>
+  </header>
+  <section class="flex flex-col md:flex-row items-center bg-[url('/static/images/homepage/Draped.png')] md:bg-[url('/static/images/homepage/pastel.png')] bg-cover bg-center h-full w-full">
+    <!--hero text-->
+    <div class="text-4xl md:text-6xl md:text-left md:px-10 text-center font-bold mt-10 text-slate-800">
+      Discover Your Style with Our Latest Collection
+      <p class="text-center md:text-left md:text-lg text-sm mt-2 text-gray-600 font-semibold font-[Open_sans]">Step into the world of fashion with our
+        stunning new arrivals. Each piece is crafted to elevate your wardrobe and express your unique style.
+      </p>
+      <button class="mt-5 bg-yellow-500 text-slate-800 font-bold py-4 px-8 text-2xl rounded-xl hover:bg-yellow-400 transition duration-300">Shop Now</button>
+    </div>
+    <!--hero image-->
+    <div class="flex justify-center px-10 mb-10 md:px-5">
+      <img src="../static/images/homepage/image_fx.jpg" alt="Hero Image" class="h-auto max-w-full object-contain mt-5 rounded-3xl">
+    </div>
+  </section>
+  <section class="flex flex-col md:flex-row items-center relative overflow-hidden">
+    <div
+      class="absolute left-0 md:left-auto md:right-0 md:-mr-24 bottom-0 w-[200px] h-[150px] bg-[url('/static/images/homepage/pattern.png')] bg-contain bg-no-repeat">
+    </div>
+    <!--hero text-->
+    <div class="relative z-10 px-10 text-2xl md:text-4xl md:text-left md:px-10 text-left font-bold mt-10 text-slate-800">
+      Discover the Essence of Style with Our Fashion Selections
+      <p class="text-left md:text-left md:text-lg text-sm mt-2 text-slate-600 font-semibold font-[Open_sans]">Explore our curated collection of fashion pieces that embody elegance and sophistication. Each item is designed to make a statement and enhance your personal style.</p>
+      <div class="flex flex-row gap-4 md:gap-5 mt-5">
+        <div class="text-sm md:text-lg">
+          Quality Materials
+          <p class="text-xs md:text-sm mt-2 text-slate-600 font-[Open_sans]">We use only the finest materials to ensure comfort and durability.</p>
+        </div>
+        <div class="text-sm md:text-lg">
+          Exclusive Designs
+          <p class="text-xs md:text-sm mt-2 text-slate-600 font-[Open_sans]">Our designs are exclusive and crafted to stand out.</p>
+        </div>
+      </div>
+    </div>
+    <div class="relative z-10 flex justify-center px-5 md:my-10 mb-10 md:px-5">
+      <img src="../static/images/homepage/image2.jpg" alt="Hero Image" class="h-auto max-w-full object-contain mt-5 rounded-3xl">
+    </div>
+  </section>
+  <!--Testimonial section-->
+  <section>
+  </section>
+</body>
+</html>

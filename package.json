@@ -1,0 +1,28 @@
+{
+  "name": "kweipe",
+  "version": "1.0.0",
+  "description": "A static website for a fashion brand. Showcasing clothes in different categories with style and elegance",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./static/src/input.css -o ./static/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarvelousMarvin7/KWEIPE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarvelousMarvin7/KWEIPE/issues"
+  },
+  "homepage": "https://github.com/MarvelousMarvin7/KWEIPE#readme",
+  "devDependencies": {
+    "@iconify-json/mdi-light": "^1.2.2",
+    "@iconify-json/solar": "^1.2.2",
+    "@iconify-json/tabler": "^1.2.17",
+    "@iconify/tailwind4": "^1.0.6",
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
+}
