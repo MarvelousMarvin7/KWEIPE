@@ -7,64 +7,220 @@
     <title>home</title>
 </head>
 <body>
-  <header class="bg-slate-800 shadow-md sticky top-0">
-      <div class="flex justify-between md:justify-center container mx-auto px-4 py-2">
+  <header class="bg-slate-800 shadow-lg sticky top-0 z-50">
+      <div class="flex justify-between md:justify-center lg:justify-center container mx-auto px-4 py-2">
         <!--logo-->
-        <a href="#" class="md:flex md:float-left font-family text-white text-lg md:text-2xl">KWEIPE</a>
+        <a href="#" class="lg:flex md:flex font-spg text-white text-lg lg:text-2xl md:text-2xl">KWEIPE</a>
         <!--mobile menu and bag-->
-        <div class="flex items-center gap-2 text-yellow-300 md:hidden">
+        <div class="flex items-center gap-2 text-yellow-300 lg:hidden md:hidden">
           <span class="icon-[tabler--shopping-bag]"></span>
-          <span class="icon-[tabler--category-2]"></span>
+          <span class="icon-[tabler--menu-3]"></span>
         </div>
         <!--desktop menu-->
-        <nav class="md:text-yellow-300 md:font-[Century_gothic] md:text-lg md:flex md:mx-auto hidden">
+        <nav class="lg:text-yellow-300 md:text-yellow-300 lg:font-poppins md:font-poppins md:text-lg lg:text-lg lg:flex md:flex md:mx-auto lg:mx-auto hidden">
           <div class="flex space-x-16">
             <a href="#">Home</a>
             <a href="#">Shop</a>
             <a href="#">Contact us</a>
+            <a href="#">Services</a>
           </div>
         </nav>
     </div>
   </header>
-  <section class="flex flex-col md:flex-row items-center bg-[url('/static/images/homepage/Draped.png')] md:bg-[url('/static/images/homepage/pastel.png')] bg-cover bg-center h-full w-full">
+  <section class="flex flex-col lg:flex-row md:flex-row items-center bg-[url('/static/images/homepage/Draped.png')] lg:bg-[url('/static/images/homepage/pastel.png')] bg-cover bg-center h-full w-full">
     <!--hero text-->
-    <div class="text-4xl md:text-6xl md:text-left md:px-10 text-center font-bold mt-10 text-slate-800">
+    <div class="text-4xl lg:text-6xl md:text-4xl px-5 lg:text-left md:text-left lg:px-10 md:px-5 text-center font-poppins lg:font-poppins font-bold md:mt-2 mt-10 text-slate-800">
       Discover Your Style with Our Latest Collection
-      <p class="text-center md:text-left md:text-lg text-sm mt-2 text-gray-600 font-semibold font-[Open_sans]">Step into the world of fashion with our
+      <p class="text-center lg:text-left md:text-left md:text-lg lg:text-lg text-sm mt-2 text-gray-600 font-semibold font-poppins lg:font-poppins">Step into the world of fashion with our
         stunning new arrivals. Each piece is crafted to elevate your wardrobe and express your unique style.
       </p>
-      <button class="mt-5 bg-yellow-500 text-slate-800 font-bold py-4 px-8 text-2xl rounded-xl hover:bg-yellow-400 transition duration-300">Shop Now</button>
+      <button class="mt-5 bg-yellow-500 text-slate-800 font-poppins font-bold md:px-6 md:py-2 lg:py-4 lg:px-8 py-4 px-8 text-2xl rounded-xl hover:bg-yellow-400 transition duration-300">Shop Now</button>
     </div>
     <!--hero image-->
-    <div class="flex justify-center px-10 mb-10 md:px-5">
+    <div class="flex justify-center px-10 mb-10 lg:px-5">
       <img src="../static/images/homepage/image_fx.jpg" alt="Hero Image" class="h-auto max-w-full object-contain mt-5 rounded-3xl">
     </div>
   </section>
-  <section class="flex flex-col md:flex-row items-center relative overflow-hidden">
+  <section class="flex flex-col lg:flex-row md:flex-row items-center relative overflow-hidden z-10">
     <div
-      class="absolute left-0 md:left-auto md:right-0 md:-mr-24 bottom-0 w-[200px] h-[150px] bg-[url('/static/images/homepage/pattern.png')] bg-contain bg-no-repeat">
+      class="absolute left-0 lg:left-auto md:left-auto lg:right-0 md:right-0 lg:-mr-24 md:-m-24 lg:-mb-0 bottom-0 w-[200px] h-[150px] lg:w-[200px] lg:h-[300] bg-[url('/static/images/homepage/pattern.png')] bg-contain bg-no-repeat">
     </div>
-    <!--hero text-->
-    <div class="relative z-10 px-10 text-2xl md:text-4xl md:text-left md:px-10 text-left font-bold mt-10 text-slate-800">
+    <div class="relative z-10 px-10 text-2xl lg:text-4xl md:text-3xl md:text-left lg:text-left lg:px-10 md:px-5 lg:ml-10 text-left mt-10 lg:my-10 md:mt-5 font-poppins lg:font-poppins font-bold text-slate-800">
       Discover the Essence of Style with Our Fashion Selections
-      <p class="text-left md:text-left md:text-lg text-sm mt-2 text-slate-600 font-semibold font-[Open_sans]">Explore our curated collection of fashion pieces that embody elegance and sophistication. Each item is designed to make a statement and enhance your personal style.</p>
-      <div class="flex flex-row gap-4 md:gap-5 mt-5">
-        <div class="text-sm md:text-lg">
+      <p class="text-justify lg:text-left lg:text-lg text-sm mt-2 text-slate-600 font-semibold">Explore our curated collection of fashion pieces that embody elegance and sophistication. Each item is designed to make a statement and enhance your personal style.</p>
+      <div class="flex flex-row gap-4 lg:gap-2 mt-2">
+        <div class="text-sm lg:text-lg border-2 border-blue-500 rounded-lg py-4 pl-4 pr-2 md:py-2 md:pl-2 md:pr-2">
           Quality Materials
-          <p class="text-xs md:text-sm mt-2 text-slate-600 font-[Open_sans]">We use only the finest materials to ensure comfort and durability.</p>
+          <p class="text-xs lg:text-sm mt-2 lg:text-justify text-slate-600">We use only the finest materials to ensure comfort and durability.</p>
         </div>
-        <div class="text-sm md:text-lg">
+        <div class="text-sm lg:text-lg border-2 border-blue-500 rounded-lg p-4 pr-2 md:py-2 md:pr-2">
           Exclusive Designs
-          <p class="text-xs md:text-sm mt-2 text-slate-600 font-[Open_sans]">Our designs are exclusive and crafted to stand out.</p>
+          <p class="text-xs lg:text-sm mt-2 lg:text-justify text-slate-600">Our designs are exclusive and crafted to stand out.</p>
         </div>
       </div>
     </div>
-    <div class="relative z-10 flex justify-center px-5 md:my-10 mb-10 md:px-5">
-      <img src="../static/images/homepage/image2.jpg" alt="Hero Image" class="h-auto max-w-full object-contain mt-5 rounded-3xl">
+    <div class="relative z-10 flex justify-center px-5 lg:my-20 lg:mr-10 mb-10 lg:px-5">
+      <img src="../static/images/homepage/image2.jpg" alt="Hero Image" class="h-auto max-w-full lg:scale-100 drop-shadow-sm drop-shadow-sky-800 object-contain mt-5 rounded-3xl">
     </div>
   </section>
-  <!--Testimonial section-->
-  <section>
+  <!--Service section showing various service such as clothes branding, Screen printing and selling of clothes-->
+  <section class="relative bg-[url('/static/images/homepage/bckg-2.jpg')] bg-cover bg-center h-full w-full font-poppins">
+    <!-- Semi-transparent overlay -->
+    <div class="absolute inset-0 lg:bg-black md:bg-black bg-slate-800 opacity-90 lg:opacity-50"></div>
+
+    <div class="relative z-10 mx-5 lg:mx-10 text-center">
+      <h2 class="text-yellow-300 text-4xl font-extrabold pt-10">Our Services</h2>
+      <p class="text-sm lg:text-lg mt-2 text-white font-semibold">We offer a range of services to cater to your fashion needs. From custom branding to screen printing, we have you covered.</p>
+    </div>
+    <!-- Content container (positioned above overlay) -->
+    <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-4 h-full w-full py-10 lg:px-20">
+      <!-- Service Cards -->
+      <div class="border-2 border-yellow-300 rounded-lg shadow-lg px-5 py-10 lg:p-10 md:p-5 mx-5">
+        <h4 class="text-xl text-green-300">Clothes Branding</h4>
+        <p class="text-sm lg:text-xl mt-2 text-rose-300 font-semibold">We provide custom branding services to help you create a unique identity for your clothing line.</p>
+      </div>
+      
+      <div class="border-2 border-yellow-300 rounded-lg shadow-lg px-5 py-10 lg:p-10 md:p-5 mx-5">
+        <h4 class="text-xl text-green-300">Screen Printing</h4>
+        <p class="text-sm lg:text-xl mt-2 text-rose-300 font-semibold">Our screen printing services allow you to create custom designs on various fabrics.</p>
+      </div>
+      
+      <div class="border-2 border-yellow-300 rounded-lg shadow-lg px-5 py-10 lg:p-10 md:p-5 mx-5">
+        <h4 class="text-xl text-green-300">Selling of Clothes</h4>
+        <p class="text-sm lg:text-xl mt-2 text-rose-300 font-semibold">We offer a wide range of clothing items for sale, catering to all styles and preferences.</p>
+      </div>
+    </div>
+    <div class="relative z-10 flex justify-center">
+      <button class="bg-yellow-500 text-slate-800 mb-10 font-poppins font-bold md:px-6 md:py-2 lg:py-2 lg:px-8 py-2 px-10 text-xl rounded-xl hover:bg-yellow-400 transition duration-300">Contact us</button>
+    </div>
   </section>
+  <section class="bg-white font-poppins">
+    <div class="text-3xl lg:text-4xl md:text-3xl text-center lg:mx-20 mx-10 lg:font-poppins font-bold text-slate-800 pt-10">
+      Our Collection
+      <p class="text-center lg:text-lg text-sm mt-2 text-gray-600 font-semibold">Explore our latest collection of fashion pieces that embody elegance and sophistication. Each item is designed to make a statement and enhance your personal style.</p>
+    </div>
+    <!--Contains images of of different clothes that is being sold. It scrolls to the right on mobile view but shows about 10 in large view-->
+    <div class="grid grid-cols-2 lg:grid-cols-5 md:grid-cols-5 gap-4 lg:gap-4 px-5 lg:px-20 md:px-5 py-10">
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0020.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0021.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0034.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0023.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0024.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0025.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0026.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0027.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0028.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0029.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0032.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0033.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0030.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div>
+        <img src="../static/images/homepage/IMG-20250501-WA0031.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+      <div class="hidden lg:block md:block">
+        <img src="../static/images/homepage/IMG-20250501-WA0022.jpg" alt="Clothes" class="h-auto max-w-full object-contain rounded-lg shadow-xl">
+      </div>
+    </div>
+    <div class="flex justify-center pb-10">
+      <button class="bg-yellow-500 text-slate-800 font-poppins font-bold md:px-6 md:py-2 lg:py-2 lg:px-8 py-2 px-10 text-xl rounded-xl hover:bg-yellow-400 transition duration-300">View More</button>
+    </div>
+  </section>
+  <section class="bg-yellow-200 font-poppins">
+    <!--Frequently asked question section. Each predefined question has a dropdown which will be clicked to view full information-->
+    <div class="py-24 px-8 max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+      <div class="flex flex-col text-left basis-1/2">
+          <p class="inline-block font-semibold text-primary mb-4">Services FAQ</p>
+          <p class="sm:text-4xl text-3xl font-extrabold text-base-content">Frequently Asked Questions</p>
+      </div>
+      <ul class="basis-1/2">
+          <li>
+              <button class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
+                  <span class="flex-1 text-base-content">How secure is my insurance information?</span>
+                  <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                      <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+                  </svg>
+              </button>
+              <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+                  <div class="pb-5 leading-relaxed">
+                      <div class="space-y-2 leading-relaxed">We prioritize the security of your insurance information. We use advanced encryption and strict data protection measures to ensure your data is safe and confidential.</div>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <button class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
+                  <span class="flex-1 text-base-content">How can I customize my insurance coverage?</span>
+                  <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                      <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+                  </svg>
+              </button>
+              <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+                  <div class="pb-5 leading-relaxed">
+                      <div class="space-y-2 leading-relaxed">Our insurance plans are customizable. You can tailor your coverage to meet your specific needs and budget.</div>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <button class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
+                  <span class="flex-1 text-base-content">Is there a waiting period for insurance claims?</span>
+                  <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                      <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+                  </svg>
+              </button>
+              <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+                  <div class="pb-5 leading-relaxed">
+                      <div class="space-y-2 leading-relaxed">There may be a waiting period for certain insurance claims, depending on the policy terms and conditions. Please refer to your policy documents for details.</div>
+                  </div>
+              </div>
+          </li>
+      </ul>
+    </div>
+    <script>
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
+            content.style.maxHeight = button.getAttribute("aria-expanded") === "true" ? content.scrollHeight + "px" : "0";
+        }
+    </script>
+  </section>
+  <footer class="bg-slate-800 text-white py-10 font-poppins">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 KWEIPE. All rights reserved.</p>
+      <p>Follow us on social media:</p>
+      <div class="flex justify-center space-x-4 mt-2">
+        <a href="#" class="text-yellow-300"><span class="icon-[tabler--brand-facebook]"></span></a>
+        <a href="#" class="text-yellow-300"><span class="icon-[tabler--brand-instagram]"></span></a>
+        <a href="#" class="text-yellow-300"><span class="icon-[tabler--brand-x]"></span></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
