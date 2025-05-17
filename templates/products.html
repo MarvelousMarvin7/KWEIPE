@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <title>home</title>
+</head>
+<body>
+    <script defer src="https://unpkg.com/tailwindcss-intersect@2.x.x/dist/observer.min.js"></script>
+    <header class="bg-slate-800 shadow-lg sticky top-0 z-50">
+        <div class="flex justify-between md:justify-center lg:justify-center container mx-auto px-4 py-2">
+        <!--logo-->
+        <a href="#" class="lg:flex md:flex font-spg text-white text-lg lg:text-2xl md:text-2xl">KWEIPE</a>
+        <!--mobile menu and bag-->
+        <div class="flex items-center gap-2 text-yellow-300 lg:hidden md:hidden cursor-pointer">
+            <span onclick="openNav()" class="icon-[tabler--menu-2]"></span>
+        </div>
+        <div id="mySidenav" class="h-full fixed top-0 right-0 w-60 text-lg bg-yellow-400 hidden lg:hidden md:hidden z-50 min-h-screen overflow-y-auto transform translate-x-full transition-all ease-in-out duration-500">
+            <a href="javascript:void(0)" onclick="closeNav()" class="absolute right-0 p-5 text-2xl font-poppins">&times;</a>
+            <div class="flex justify-center font-spg text-slate-800 text-lg pt-20">
+            KWEIPE
+            </div>
+            <div class="flex flex-col font-poppins text-slate-800 pt-6 pl-2 space-y-5 hover:space-y-4">
+            <a href="homepage.html" class="flex items-center pl-3 hover:bg-yellow-500 hover:py-2 hover:rounded-l-4xl transition duration-300"><span class="icon-[tabler--home] text-lg mr-5"></span>Home</a>
+            <a href="products.html" class="flex items-center border-y-2 shadow shadow-slate-800 border-l-2 rounded-l-4xl bg-slate-800 text-yellow-500 py-2 pl-3"><span class="icon-[mdi--bag-personal-tag] text-lg mr-5"></span>Products</a>
+            <a href="about.html" class="flex items-center pl-3 hover:bg-yellow-500 hover:py-2 hover:rounded-l-4xl transition duration-300"><span class="icon-[tabler--heart] text-lg mr-5"></span>Services</a>
+            <a href="contact.html" class="flex items-center pl-3 hover:bg-yellow-500 hover:py-2 hover:rounded-l-4xl transition duration-300"><span class="icon-[material-symbols--contact-support-outline] text-lg mr-5"></span>Contact us</a>
+            </div>
+        </div>
+        <!--desktop menu-->
+        <nav class="lg:text-yellow-300 md:text-yellow-300 lg:font-poppins md:font-poppins md:text-lg lg:text-lg lg:flex md:flex md:mx-auto lg:mx-auto hidden">
+            <div class="flex space-x-16">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact us</a>
+            <a href="#">Services</a>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <script src="/static/js/nav.js"></script>
+</body>
+</html>
